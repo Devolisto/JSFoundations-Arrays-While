@@ -15,7 +15,7 @@ function isArrayLengthOdd(numbers) {
   } else return false;
 }
 
-console.log(isArrayLengthOdd([1, 2, 3, ]));
+// console.log(isArrayLengthOdd([1, 2, 3, ]));
 
 /**
  * isArrayLengthEven(numbers):
@@ -34,7 +34,7 @@ function isArrayLengthEven(numbers) {
   } else return true;
 }
 
-console.log(isArrayLengthEven([1, 2, 3, 4]));
+// console.log(isArrayLengthEven([1, 2, 3, 4]));
 /**
  * addLailaToArray(instructors):
  * - receives array `instructors`
@@ -50,7 +50,7 @@ function addLailaToArray(instructors) {
   
 }
 
-console.log(addLailaToArray(["Ali", "Khalid"]));
+// console.log(addLailaToArray(["Ali", "Khalid"]));
 
 /**
  * eliminateTeam(teams):
@@ -65,7 +65,7 @@ function eliminateTeam(teams) {
   return teams.pop();
 }
 
-console.log(eliminateTeam(["Brazil", "Germany", "Italy"]))
+// console.log(eliminateTeam(["Brazil", "Germany", "Italy"]))
 
 /**
  * secondHalfOfArrayIfItIsEven(fruits):
@@ -94,7 +94,7 @@ function secondHalfOfArrayIfItIsEven(fruits) {
   return newArr % 2 ? [] : fruits.slice(newArr / 2);
 }
 
-console.log(secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi", "blueberry"]));
+// console.log(secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi", "blueberry"]));
 
 /**
  * youGottaCalmDown(shout):
@@ -123,7 +123,7 @@ function youGottaCalmDown(shout) {
   return shout;
 }
 
-console.log(youGottaCalmDown("HI!!!!!!!"));
+// console.log(youGottaCalmDown("HI!!!!!!!"));
 
 module.exports = {
   isArrayLengthOdd,
