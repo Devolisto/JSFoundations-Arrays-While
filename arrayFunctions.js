@@ -10,7 +10,12 @@
  */
 function isArrayLengthOdd(numbers) {
   // Your code here
+  if(numbers.length % 2) {
+    return true;
+  } else return false;
 }
+
+console.log(isArrayLengthOdd([1, 2, 3, ]));
 
 /**
  * isArrayLengthEven(numbers):
@@ -24,8 +29,12 @@ function isArrayLengthOdd(numbers) {
  */
 function isArrayLengthEven(numbers) {
   // Your code here
+  if(numbers.length % 2) {
+    return false;
+  } else return true;
 }
 
+console.log(isArrayLengthEven([1, 2, 3, 4]));
 /**
  * addLailaToArray(instructors):
  * - receives array `instructors`
@@ -36,7 +45,12 @@ function isArrayLengthEven(numbers) {
  */
 function addLailaToArray(instructors) {
   // Your code here
+  instructors.push("Laila");
+  return instructors;
+  
 }
+
+console.log(addLailaToArray(["Ali", "Khalid"]));
 
 /**
  * eliminateTeam(teams):
@@ -48,7 +62,10 @@ function addLailaToArray(instructors) {
  */
 function eliminateTeam(teams) {
   // Your code here
+  return teams.pop();
 }
+
+console.log(eliminateTeam(["Brazil", "Germany", "Italy"]))
 
 /**
  * secondHalfOfArrayIfItIsEven(fruits):
@@ -62,7 +79,22 @@ function eliminateTeam(teams) {
  */
 function secondHalfOfArrayIfItIsEven(fruits) {
   // Your code here
+
+  // if(fruits.length % 2) {
+  //   fruits.length/2;
+  //   return fruits;
+  // } else {
+  //   let count = 0;
+  //   while (count < fruits.length) {
+  //     fruits.pop;
+  //   }
+  // }
+
+  let newArr = fruits.length;
+  return newArr % 2 ? [] : fruits.slice(newArr / 2);
 }
+
+console.log(secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi", "blueberry"]));
 
 /**
  * youGottaCalmDown(shout):
@@ -80,7 +112,18 @@ function secondHalfOfArrayIfItIsEven(fruits) {
  */
 function youGottaCalmDown(shout) {
   // Your code here
+  // if(shout.endsWith("!")) {
+  //   shout.endsWith("!");
+  //   return shout.slice(0,-1)
+  // }
+
+  while(shout.endsWith("!!")) {
+    shout = shout.slice(0 , -1);
+  }
+  return shout;
 }
+
+console.log(youGottaCalmDown("HI!!!!!!!"));
 
 module.exports = {
   isArrayLengthOdd,
